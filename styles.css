@@ -18,13 +18,13 @@
   align-items: center;
 }
 
-.logo{
-    margin-left: 30px;
-    font-family: 'Inter', sans-serif;;
+.logo {
+  margin-left: 30px;
+  font-family: 'Inter', sans-serif;
 }
 
-.menu-button{
-    margin-right: 30px;
+.menu-button {
+  margin-right: 30px;
 }
 
 /* Headline */
@@ -40,30 +40,31 @@
   height: 100vh;
 }
 
-.headline h1{
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    margin: 0 24px;
+.headline h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  margin: 0 24px;
 }
 
-.headline span{
-    font-family: 'Inter', sans-serif;
-    font-size: 40px;
-    color: #36b37e;
-    margin: 0 24px;
+.headline span {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  color: #36b37e;
+  margin: 0 24px;
 }
 
-.headline p{
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    margin: 0 24px;
-}
-.contact-info{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.headline p {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin: 0 24px;
 }
 
-.contact-info-button{
-    margin-right: 30px;
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-button {
+  margin-right: 30px;
 }
