@@ -138,7 +138,7 @@
   width: 90%;
   margin-top: 40px;
   display: grid;
-  grid-template-columns: minmax(315px, 315px);
+  grid-template-columns: minmax(315px, 1fr);
   grid-template-rows: 6fr;
   align-items: center;
   justify-content: center;
