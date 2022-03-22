@@ -139,6 +139,7 @@
 }
 
 .works-cards-container {
+  width: 350px;
   margin-top: 40px;
   display: grid;
   grid-template-columns: minmax(350px, 1fr);
@@ -149,6 +150,7 @@
 
 .work-card {
   width: 350px;
+  height: 474px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,6 +171,7 @@
 
 .project-image {
   height: 252px;
+  width: 350px;
   background-color: #ebf0ee;
   border-radius: 8px 8px 0 0;
 }
