@@ -160,22 +160,36 @@
                 </div>
         </section>
         <footer class="footer">
-            <section class="contact-me-headline">
-            <h3>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
+            <div class="contact-me-headline">
+            <h3 class="generic section-headline">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h3>
             <form action="#" method="post">
-                <ul>
+                <ul class="contact-form-control">
                     <li>
-                        <input type="text" name="Full-name" placeholder="Full name">
+                        <input type="text" name="Full-name" placeholder="Full name" class="user-name" required maxlength="30">
                     </li>
                     <li>
-                        <input type="text" name="email" placeholder="E-mail">
+                        <input type="email" name="email" placeholder="E-mail" class="user-email" required>
                     </li>
                     <li>
-                        <textarea name="msg" id="msg" cols="30" rows="10">Enter text here</textarea>
+                        <textarea name="msg" id="msg" maxlength="500" class="user-msg" required placeholder="Enter text here"></textarea>
+                    </li>
+                    <li>
+                        <button type="submit" class="btn">Get in touch</button>
                     </li>
                 </ul>
+                   
             </form>
-            </section>
+            <ul class="contact-info contact-for-contact-info">
+                <li> <a href="https://twitter.com/jrosario19" class="contact-info-button"><img src="images/twitter.svg" alt=""></a> </li>
+                <li> <a href="https://linkedin.com/in/juan-francisco-rosario-suli-44595051" class="contact-info-button"><img src="images/Linkedinicon.svg" alt=""></a> </li>
+                <li> <a href="#" class="contact-info-button"><img src="images/medium.svg" alt=""></a> </li>
+                <li> <a href="https://github.com/jrosario19" class="contact-info-button"><img src="images/github.svg" alt=""></a> </li>
+                <li> <a href="#" class="contact-info-button"><img src="images/angellist.svg" alt=""></a> </li>
+            </ul>
+            <div class="portfolio-owner-email">
+                <p>myemailhere@email.com</p>
+            </div>
+            </div>
         </footer>
     </main>
 </body>
