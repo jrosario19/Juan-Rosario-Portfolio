@@ -18,7 +18,6 @@
 
 .btn:hover {
   background-color: #008552;
-  padding: 12px 12px;
   color: white;
 }
 
@@ -30,8 +29,10 @@
 .section-headline {
   font-family: 'Inter', sans-serif;
   font-size: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 58px;
   color: #172b4d;
+  padding: 0 12px;
+  margin-top: 40px;
 }
 
 /* Nav Bar */
@@ -118,6 +119,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
 }
 
 .contact-info-button {
@@ -139,6 +141,7 @@
 }
 
 .works-cards-container {
+  width: 350px;
   margin-top: 40px;
   display: grid;
   grid-template-columns: minmax(350px, 1fr);
@@ -169,6 +172,7 @@
 
 .project-image {
   height: 252px;
+  width: 350px;
   background-color: #ebf0ee;
   border-radius: 8px 8px 0 0;
 }
@@ -278,4 +282,61 @@
   border: 1px solid #d0d9d4;
   margin-bottom: 15px;
   background: #ebf0ee;
+}
+
+/* Contact Form */
+.footer {
+  height: 785px;
+  background-image: url("images/illustration-contact-form.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.contact-form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.user-name {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #d0d9d4;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.user-email {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #d0d9d4;
+  width: 327px;
+  height: 48px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-left: 10px;
+}
+
+.user-msg {
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #d0d9d4;
+  width: 327px;
+  height: 114px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.contact-for-contact-info {
+  margin-bottom: 40px;
+}
+
+.portfolio-owner-email {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  height: 189px;
+  color: #42526e;
 }
