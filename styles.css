@@ -356,10 +356,6 @@
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .container {
-    padding-left: 20px;
-  }
-
   .btn {
     background-color: #36b37f;
     padding: 17px 5px;
@@ -432,7 +428,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
     margin-bottom: 50px;
   }
 
@@ -445,7 +440,7 @@
   }
 
   .generic {
-    text-align: center;
+    text-align: left;
     font-family: 'Inter', sans-serif;
   }
 
