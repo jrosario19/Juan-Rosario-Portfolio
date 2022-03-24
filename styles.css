@@ -35,7 +35,7 @@
   margin-top: 40px;
 }
 
-.container{
+.container {
   width: 100%;
 }
 
@@ -356,7 +356,7 @@
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .container{
+  .container {
     padding-left: 20px;
   }
 
@@ -487,7 +487,6 @@
     border-radius: 10px;
     margin-right: 20px;
     width: 90%;
-    margin-right: 20px;
   }
 
   .works-cards-detail-container {
@@ -641,7 +640,7 @@
     width: 100%;
   }
 
-  .contact-form-control li{
+  .contact-form-control li {
     width: 100%;
   }
 
@@ -709,8 +708,4 @@
     width: 150px;
     margin-right: 193px;
   }
-
-  
-
-  }
-
+}
