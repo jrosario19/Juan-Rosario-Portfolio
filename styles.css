@@ -678,6 +678,10 @@
   .contact-for-contact-info {
     margin-bottom: 250px;
     margin-top: 150px;
+    background-image: url("images/Rectangle42.svg");
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    padding-top: 10px;
   }
 
   .portfolio-owner-email {
