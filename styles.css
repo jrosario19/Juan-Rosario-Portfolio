@@ -14,6 +14,7 @@
   border-radius: 5px;
   font-family: 'Inter', sans-serif;
   align-self: center;
+  transition: all 0.5s ease-out;
 }
 
 .btn:hover {
