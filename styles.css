@@ -719,5 +719,6 @@
   .btn-contact-form {
     width: 150px;
     margin-right: 193px;
+    transition: all 0.5s ease-out;
   }
 }
