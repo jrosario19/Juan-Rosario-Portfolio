@@ -5,9 +5,13 @@ This is the Juan Rosario Portfolio build a Microverse Academy. This is the first
 - HTML5
 - CSS3
 
+## Live Demo (if available)
+
+[Live Demo Link](https://jrosario19.github.io/Juan-Rosario-Portfolio/)
+
 ## Getting Started
 To get started and get a local copy of this project, follow the next intructions:
-- Clone the repository by excecuting the git clone ```git@github.com:jrosario19/Hello-Microverse.git``` from the terminal.
+- Clone the repository by excecuting the git clone ```git@github.com:jrosario19/Juan-Rosario-Portfolio.git``` from the terminal.
 
 ### Prerequisites
 You should make sure that you have installed in your computer the Node.js.
