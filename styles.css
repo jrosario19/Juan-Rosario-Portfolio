@@ -44,22 +44,49 @@
   /* Nav Bar */
   .toolbar {
     height: 48px;
-  }
-
-  .navbar-items {
     display: flex;
-    height: 100%;
     justify-content: space-between;
     align-items: center;
   }
 
-  .Nav-Item {
+  .navbar-items li a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #3a4a42;
+    font-size: 32px;
+    font-weight: 600;
+    padding-left: 28px;
+  }
+
+  .navbar-items li {
+    margin-bottom: 40px;
+  }
+
+  .navbar-items {
     display: none;
+  }
+
+  .visible-mobilemenu {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: start;
+    align-items: flex-start;
+    top: 48px;
+    left: 0;
+    background-color: #fff;
   }
 
   .logo {
     margin-left: 30px;
     font-family: 'Inter', sans-serif;
+    color: #28352f;
+  }
+
+  .logo-invisible {
+    display: none;
   }
 
   .about-me-headline h2 {
@@ -91,6 +118,22 @@
 
   .menu-button {
     margin-right: 30px;
+    background-image: url("images/IconMenu.jpg");
+    order: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+  }
+
+  .menu-button-open {
+    margin-right: 30px;
+    background-image: url("images/IconCancel.svg");
+    order: 2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
   }
 
   /* Headline */
@@ -359,6 +402,13 @@
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
+  .toolbar {
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .btn {
     background-color: #36b37f;
     padding: 17px 5px;
@@ -373,6 +423,12 @@
     display: flex;
     justify-content: center;
     padding: 20px;
+  }
+
+  .navbar-items li a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: black;
   }
 
   .logo {
