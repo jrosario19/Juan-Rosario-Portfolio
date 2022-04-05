@@ -102,16 +102,4 @@ function cardWork(item){
 
 worksDiv.innerHTML= `${listOfWork.map(cardWork).join('')}`;
 
-function ShowPopup(id) {
-  let workForPopup=listOfWork.filter(x=>x.Id==id);
-  console.log(workForPopup[0].Name);
-  let modal=document.createElement('div');;
-  modal.innerHTML=`
-  <article class="modal"></article>
-  `;
 
-  backgroundModal = document.createElement('div');
-  backgroundModal.classList.add('background-popup');
-  main.appendChild(backgroundModal);
-  backgroundModal.appendChild(modal);
-}
