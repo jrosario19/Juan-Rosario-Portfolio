@@ -77,6 +77,7 @@
     top: 48px;
     left: 0;
     background-color: #fff;
+    overflow-y: hidden;
   }
 
   .logo {
@@ -780,5 +781,27 @@
     width: 150px;
     margin-right: 193px;
     transition: all 0.5s ease-out;
+  }
+
+  /* Popup Windows */
+  .background-popup {
+    display: flex;
+    position: fixed;
+    background-color: #c1c7d0;
+    opacity: 0.98;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    overflow: auto;
+    padding-top: 80px;
+  }
+
+  .modal {
+    width: 150px;
+    height: 150px;
+    top: 0;
+    left: 50px;
+    background-color: #fff;
   }
 }
