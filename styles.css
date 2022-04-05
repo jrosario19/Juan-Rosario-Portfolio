@@ -797,11 +797,105 @@
     padding-top: 80px;
   }
 
+  .modal-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .modal {
-    width: 150px;
-    height: 150px;
-    top: 0;
-    left: 50px;
+    position: absolute;
+    width: 65%;
+    height: 1250px;
+    top: 7%;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-self: center;
+    max-width: 1200px;
+    min-width: 1200px;
+  }
+
+  .popup-close {
+    width: 50px;
+    height: 60px;
+    background-image: url("images/ClosePopup.svg");
+    background-repeat: no-repeat;
+    align-self: flex-end;
+    margin: 15px 15px 15px 0;
+  }
+
+  .popup-img {
+    background-image: url("images/SnapshootPortfolio@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 95%;
+    height: 95%;
+    align-self: center;
+  }
+
+  .live-button {
+    background-color: #36b37f;
+    padding: 17px 50px 17px 15px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    background-image: url(images/Icon-Live.svg);
+    background-repeat: no-repeat;
+    background-position-x: 100px;
+    background-position-y: 20px;
+    margin-top: 30px;
+  }
+
+  .source-button {
+    background-color: #36b37f;
+    padding: 17px 45px 17px 15px;
+    color: white;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    background-image: url(images/Vector-Github.svg);
+    background-repeat: no-repeat;
+    background-position-x: 115px;
+    background-position-y: 20px;
+    margin-right: 30px;
+  }
+
+  .title-button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .title-frameworksOptions {
+    align-self: center;
+    margin-top: 50px;
+    margin-left: 32px;
+  }
+
+  .popup-title {
+    margin-left: 5px;
+    margin-bottom: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #172b4d;
+    font-size: 32px;
+  }
+
+  .popup-description {
+    font-family: 'Inter', sans-serif;
+    color: #344563;
+    font-size: 16px;
+    line-height: 35px;
+    padding: 0 30px 0 30px;
+  }
+
+  .recent-works-frameworks-popup {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    align-self: flex-start;
   }
 }
