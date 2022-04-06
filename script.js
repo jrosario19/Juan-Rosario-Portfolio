@@ -150,3 +150,5 @@ function CloseModal() {
 }
 ShowPopup(10);
 CloseModal();
+
+const email = document.querySelector('#email'); 
