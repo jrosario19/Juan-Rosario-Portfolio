@@ -148,7 +148,18 @@ function CloseModal() {
     modal.remove();
   }
 }
-ShowPopup(10);
 CloseModal();
 
-const email = document.querySelector('#email'); 
+const email = document.querySelector('#email');
+const errormessage = document.querySelector('#errormessage');
+const sutbmitButton = document.querySelector('#sutbmitButton');
+const form = document.querySelector('#form');
+
+form.addEventListener('submit', (e) => {
+  if (email.value.toLowerCase() !== email.value) {
+    e.preventDefault();
+    errormessage.innerHTML = 'E-Mail field should be in lower case.';
+  } else {
+    errormessage.innerHTML = '';
+  }
+});
