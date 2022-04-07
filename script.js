@@ -166,22 +166,22 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-
-function SaveLocalStorage(){
-  let inputsInfo = {
+function SaveLocalStorage() {
+  const inputsInfo = {
     name: fullname.value,
     emailStored: email.value,
-    messageStored: message
+    messageStored: message.value,
   };
-localStorage.setItem('Info',JSON.stringify(inputsInfo));
+  localStorage.setItem('Info', JSON.stringify(inputsInfo));
 }
 
-function GetStoredData() { 
-  if (localStorage.getItem('Info')) { 
-  let InfoForInputs = JSON.parse(localStorage.getItem('Info')); 
-  fullname.value=InfoForInputs.name; 
-  email.value=InfoForInputs.emailStored; 
-  message=InfoForInputs.emailStored; 
-} } 
+function GetStoredData() {
+  if (localStorage.getItem('Info')) {
+    const InfoForInputs = JSON.parse(localStorage.getItem('Info'));
+    fullname.value = InfoForInputs.name;
+    email.value = InfoForInputs.emailStored;
+    message.value = InfoForInputs.messageStored;
+  }
+}
 
 GetStoredData();
