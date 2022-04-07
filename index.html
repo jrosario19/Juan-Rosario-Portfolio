@@ -105,14 +105,14 @@
             <form action="https://formspree.io/f/xlezlydw" method="post" id="form">
                 <ul class="contact-form-control">
                     <li>
-                        <input type="text" name="Full-name" placeholder="Full name" class="user-name" required maxlength="30">
+                        <input type="text" name="Full-name" id="fullname" placeholder="Full name" class="user-name" required maxlength="30" onchange="SaveLocalStorage()">
                     </li>
                     <li>
-                        <input type="email" name="email" id="email" placeholder="E-mail" class="user-email" required>
+                        <input type="email" name="email" id="email" placeholder="E-mail" class="user-email" required onchange="SaveLocalStorage()">
                         
                     </li>
                     <li>
-                        <textarea name="msg" id="msg" maxlength="500" class="user-msg" required placeholder="Enter text here"></textarea>
+                        <textarea name="msg" id="msg" maxlength="500" class="user-msg" required placeholder="Enter text here" onchange="SaveLocalStorage()"></textarea>
                     </li>
                     <li class="errormessageitem"><span id="errormessage" class="errormessage"></span></li>
                     <li>
