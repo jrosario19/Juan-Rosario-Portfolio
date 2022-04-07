@@ -151,6 +151,8 @@ function CloseModal() {
 CloseModal();
 
 const email = document.querySelector('#email');
+const fullname = document.querySelector('#fullname');
+const message = document.querySelector('#msg');
 const errormessage = document.querySelector('#errormessage');
 const sutbmitButton = document.querySelector('#sutbmitButton');
 const form = document.querySelector('#form');
@@ -163,3 +165,23 @@ form.addEventListener('submit', (e) => {
     errormessage.innerHTML = '';
   }
 });
+
+function SaveLocalStorage() {
+  const inputsInfo = {
+    name: fullname.value,
+    emailStored: email.value,
+    messageStored: message.value,
+  };
+  localStorage.setItem('Info', JSON.stringify(inputsInfo));
+}
+
+function GetStoredData() {
+  if (localStorage.getItem('Info')) {
+    const InfoForInputs = JSON.parse(localStorage.getItem('Info'));
+    fullname.value = InfoForInputs.name;
+    email.value = InfoForInputs.emailStored;
+    message.value = InfoForInputs.messageStored;
+  }
+}
+
+GetStoredData();
