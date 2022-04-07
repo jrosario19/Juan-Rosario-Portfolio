@@ -176,4 +176,12 @@ function SaveLocalStorage(){
 localStorage.setItem('Info',JSON.stringify(inputsInfo));
 }
 
+function GetStoredData() { 
+  if (localStorage.getItem('Info')) { 
+  let InfoForInputs = JSON.parse(localStorage.getItem('Info')); 
+  fullname.value=InfoForInputs.name; 
+  email.value=InfoForInputs.emailStored; 
+  message=InfoForInputs.emailStored; 
+} } 
 
+GetStoredData();
