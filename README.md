@@ -4,6 +4,7 @@ This is the Juan Rosario Portfolio build a Microverse Academy. This is the first
 ## Built With
 - HTML5
 - CSS3
+- Javacript
 
 ## Live Demo (if available)
 
