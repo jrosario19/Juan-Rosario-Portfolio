@@ -42,6 +42,12 @@
 
 @media screen and (max-width: 767px) {
   /* Nav Bar */
+  .img-project1 {
+    height: 222px;
+    width: 320px;
+    padding-top: 15px;
+  }
+
   .toolbar {
     height: 48px;
     display: flex;
@@ -233,6 +239,10 @@
     width: 350px;
     background-color: #ebf0ee;
     border-radius: 8px 8px 0 0;
+  }
+
+  .project-image-bg {
+    background-color: black;
   }
 
   .recent-works-frameworks {
@@ -562,6 +572,12 @@
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
+  .img-project1 {
+    height: 222px;
+    width: 320px;
+    padding-top: 15px;
+  }
+
   .toolbar {
     height: 48px;
     display: flex;
@@ -725,6 +741,10 @@
     width: 100%;
     background-color: #ebf0ee;
     border-radius: 8px 8px 0 0;
+  }
+
+  .project-image-bg {
+    background-color: black;
   }
 
   .recent-works-frameworks {
@@ -989,17 +1009,14 @@
   }
 
   .popup-img {
-    background-image: url("images/SnapshootPortfolio@2x.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     width: 95%;
     height: 95%;
     align-self: center;
   }
 
   .popup-img > img {
-    display: none;
+    width: 100%;
+    align-self: center;
   }
 
   .live-button {
