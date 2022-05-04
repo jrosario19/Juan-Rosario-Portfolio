@@ -42,16 +42,12 @@
 
 @media screen and (max-width: 767px) {
   /* Nav Bar */
-.img-project1{
-  height: 222px;
-  width: 320px;
-  padding-top: 15px;
-}
+  .img-project1 {
+    height: 222px;
+    width: 320px;
+    padding-top: 15px;
+  }
 
-.project-image-bg {
-  background-color: black;
-}
-  
   .toolbar {
     height: 48px;
     display: flex;
@@ -576,7 +572,7 @@
 
 /* Desktop version */
 @media screen and (min-width: 768px) {
-  .img-project1{
+  .img-project1 {
     height: 222px;
     width: 320px;
     padding-top: 15px;
@@ -1013,7 +1009,6 @@
   }
 
   .popup-img {
-    
     width: 95%;
     height: 95%;
     align-self: center;

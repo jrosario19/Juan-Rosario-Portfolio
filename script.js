@@ -85,7 +85,7 @@ function techsForPopup(techs) {
 }
 
 function cardWork(item) {
-  if(item.popImg=='images/Project1ScreenShot.jpg'){
+  if (item.popImg == 'images/Project1ScreenShot.jpg') {
     return `
     <article class="work-card">
     <div class="project-image project-image-bg">
@@ -96,8 +96,8 @@ function cardWork(item) {
     <a href="#" class="btn btn-align" onclick="ShowPopup(${item.Id})">See Project</a>
   </article>
     `;
-  }else {
-    return `
+  }
+  return `
   <article class="work-card">
   <div class="project-image">
       
@@ -107,8 +107,6 @@ function cardWork(item) {
   <a href="#" class="btn btn-align" onclick="ShowPopup(${item.Id})">See Project</a>
 </article>
   `;
-  }
-  
 }
 
 worksDiv.innerHTML = `${listOfWork.map(cardWork).join('')}`;
