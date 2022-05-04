@@ -22,10 +22,10 @@ const listOfWork = [{
   Id: '1',
   Name: 'Multi-Post Stories Gain+Glory 1',
   Description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea.",
-  popImg: 'images/SnapshootPortfolio.svg',
+  popImg: 'images/Project1ScreenShot.jpg',
   techs: ['css', 'JavaScript', 'html', 'Codekit', 'GitHub', 'Bootstrap'],
-  liveLink: 'https://jrosario19.github.io/Juan-Rosario-Portfolio/',
-  sourceLink: 'https://github.com/jrosario19/Juan-Rosario-Portfolio',
+  liveLink: 'https://jrosario19.github.io/Capstone-Project-1/',
+  sourceLink: 'https://github.com/jrosario19/Capstone-Project-1',
 }, {
   Id: '2',
   Name: 'Multi-Post Stories Gain+Glory 2',
@@ -85,7 +85,19 @@ function techsForPopup(techs) {
 }
 
 function cardWork(item) {
-  return `
+  if(item.popImg=='images/Project1ScreenShot.jpg'){
+    return `
+    <article class="work-card">
+    <div class="project-image project-image-bg">
+    <img class="img-project1" src="${item.popImg}" alt="Project1">
+    </div>
+        <h3>${item.Name}</h3>
+        ${techs(item.techs)}
+    <a href="#" class="btn btn-align" onclick="ShowPopup(${item.Id})">See Project</a>
+  </article>
+    `;
+  }else {
+    return `
   <article class="work-card">
   <div class="project-image">
       
@@ -95,6 +107,8 @@ function cardWork(item) {
   <a href="#" class="btn btn-align" onclick="ShowPopup(${item.Id})">See Project</a>
 </article>
   `;
+  }
+  
 }
 
 worksDiv.innerHTML = `${listOfWork.map(cardWork).join('')}`;
